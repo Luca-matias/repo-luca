@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #424241;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*estilizacion de los titulos*/
+
+h1 {
+    color: #fdfafa;
+    text-align: center;
+    font-style: inherit;
+    font-size: 40px;
+}
+
+/*estilizacion de contenido principal*/
+
+.imagen-principal {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.seccion-principal a {
+    color: #fdfafa;
+    text-decoration: none;
+    align-items: center;
+}
+
+/*estilizacion del contenido de la cartelera*/
+
+
+/*estilizacion de pie de pagina*/
+
+.PieDePagina {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.PieDePagina img {
+    justify-content: center;
+    width: 30px;
+}
+
+.PieDePagina p {
+    text-align: center;
+    color: #fdfafa;
+}
+
+.PieDePagina h6 {
+    color: #fdfafa;
+    text-align: center;
+}
+
+.PieDePagina a {
+    align-items: center;
+}
+
+/*estilizacion de la pagina contacto*/
+h2 {
+    color: #fdfafa;
+    text-align: center;
+}
+
+.imagen-contacto {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.formulario-ayuda form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-ayuda {
+    color: #fdfafa;
+    padding: 40 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.preguntas-frecuentes {
+    color: #fdfafa;
+    text-align: center;
+}
+
+/*estilizacion de la seccion premium*/
+
+.membresia-principal {
+    padding: 10px;
+    border: 0;
+    margin: 0;
+}
+
+.imagen-premium {
+     display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.membresia {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.membresia-black {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    border-color: #000000;
+}
+
+.membresia-dorada {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    border-color: #b38e27;
+}
+
+.membresia-basica {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    border-color: #b82a0e;
+}
+
+a {
+    text-decoration: none;
+    color: #e7e7e0;
+    text-align: center;
+}
+
+.dudas-membresia {
+    text-align: center;
+}
+
+/*estilizacion de la seccion candy*/
+
+.imagen-candy {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.productos {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.productos h2 {
+    color: #fdfafa;
+}
+
+.productos article {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.productos img {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.productos a{
+    color: #fdfafa;
+    text-decoration: none;
+}
+
+/*formulario*/
+.formulario {
+    display: inline;
+    align-items: center;
+    padding: 40px;
+    border: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 425px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secciones ul {
+        flex-direction: column;
+    }
+
+    .cartelera article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PieDePagina img {
+        width: 100%;
+        margin: 2px;
+        align-items: center;
+    }
+
+    .PieDePagina p {
+        flex-direction: column;
+    }
+}
+
