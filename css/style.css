@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #141414;
+    background-color: #363434;
 }
 
 html, body {
@@ -10,6 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /*estilizacion de los titulos*/
@@ -107,20 +108,18 @@ h2 {
     border-radius: 10px;
 }
 
-.formulario-ayuda form {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario-ayuda {
-    color: #fdfafa;
-    padding: 40 30px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
+.barra-busqueda {
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .preguntas-frecuentes {
+    color: #fdfafa;
+    text-align: center;
+}
+
+.preguntas-frecuentes p {
     color: #fdfafa;
     text-align: center;
 }
@@ -270,9 +269,7 @@ a {
     }
 
     .imagen-principal,
-    .imagen-contacto,
-    .imagen-premium,
-    .imagen-candy {
+    .imagen-contacto {
         width: 95%;
         padding: 10px 0;
     }
@@ -295,4 +292,3 @@ a {
         display: block;
     }
 }
-
