@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Premium</title>
 </head>
 <body>
     <header>
-        <h1>Cine Club</h1>
-        <nav class="secciones">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./premium.html">Premium</a></li>
-                <li><a href="./candy.html">Candy</a></li>
-                <li><a href="./registrarse.html">Registrarse</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">
+        <h1 class="h4 m-0">Cine Club</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./premium.html">Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="./candy.html">Candy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./registrarse.html">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     </header>
 
     <main>
-        <section class="membresia-principal">
+        <section>
             <article>
                 <img src="https://i.pinimg.com/1200x/db/9d/08/db9d08d0d8ad389c6ad110d7445f40af.jpg" alt="imagen-premium" class="imagen-premium">
                 <h2>Elegi que tipo de membresia queres ser</h2>
@@ -29,72 +50,63 @@
         </section>
 
         <section class="membresia">
-            <a href="index.html">
-                <article class="membresia-black">
-                    <h3>Membresia Black</h3>
-                    <h4>2 entradas mensuales </h4>
-                    <p>2D - 3D - COMFORT validas por 90 dias</p>
+            
+        <div class="card-group">
 
-                    <h4>25% off en combos</h4>
-                    <p>seleccionados del candy</p>
-
-                    <h4>50% OFF en entradas</h4>
-                    <p>2D - 3D - COMFORT todos los dias</p>
-
-                    <h4>Regalo de bienvenida</h4>
-                    <p>Combo de pochoclos y gaseosa por unica vez</p>
-
-                    <h4>Suma y canjea puntos</h4>
-                    <p>todas las compras suman.Canjea por entradas,combos y coleccionables</p>
-
-                    <h4>refill de una gaseosa</h4>
-                    <p>con la compra de cualquier combo de la tienda</p>
-
-                    <h1>$17.999</h1>
-                    <h2>Quiero esta membresia</h2>
-                </article>
-            </a>
-            <a href="index.html">
-            <article class="membresia-dorada">
-                <h3>Membresia Dorada</h3>
-                <h4>2 entradas mensuales </h4>
-                <p>2D - 3D - COMFORT validas por 30 dias</p>
-
-                <h4>25% off en combos</h4>
-                <p>seleccionados del candy</p>
-
-                <h4>50% OFF en entradas</h4>
-                <p>2D - 3D - COMFORT solo de lunes a viernes</p>
-
-                <h4>Regalo de bienvenida</h4>
-                <p>Combo de pochoclos y gaseosa por unica vez</p>
-
-                <h4>Suma y canjea puntos</h4>
-                <p>todas las compras suman.Canjea por entradas,combos y coleccionables</p>
-
-                <h1>$14.999</h1>
-                <h2>Quiero esta membresia</h2>
+            <!-- Membresía Black -->
+            <article class="membresia-black card border-white bg-dark text-white">
+                <div class="card-header bg-black text-white text-center">
+                    <h5 class="card-title mb-0">Membresía Black</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-light">Acceso total y beneficios exclusivos</h6>
+                    <ul class="list-unstyled mb-3">
+                        <li> 2 entradas mensuales</li>
+                        <li>50% en entradas</li>
+                        <li> 25% off en combos</li> 
+                        <li> Regalo de Bienvenida</li>
+                        <li> refill de una gaseosa</li>
+                    </ul>
+                    <p class="card-text fw-bold fs-5 mb-3">$17.999 POR MES</p>
+                    <a href="premium.html" class="btn btn-dark w-100">Quiero esta membresia</a>
+                </div>
             </article>
-            </a>
-            <a href="index.html">
-            <article class="membresia-basica">
-                <h3>Membresia Basica</h3>
-                <h4>2 entradas mensuales </h4>
-                <p>solo formato 2D</p>
 
-                <h4>25% off en combos</h4>
-                <p>seleccionados del candy</p>
-
-                <h4>10% OFF en entradas</h4>
-                <p>2D - 3D - COMFORT solo de lunes a viernes</p>
-
-                <h4>Suma y canjea puntos</h4>
-                <p>todas las compras suman.Canjea por entradas,combos y coleccionables</p>
-
-                <h1>$10.999</h1>
-                <h2>Quiero esta membresia</h2>
+            <!-- Membresía Dorada -->
+            <article class="card border-white">
+                <div class="card-header text-center text-white">
+                    <h5 class="card-title mb-0">Membresía Dorada</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-white">Beneficios premium y descuentos especiales</h6>
+                    <ul class="list-unstyled mb-3 text-white">
+                        <li> 2 entradas mensuales</li>
+                        <li> 25% off en combos</li>
+                        <li> 50% off en entradas</li>
+                        <li> Regalo de bienvenida</li>
+                    </ul>
+                    <p class="card-text fw-bold fs-5 mb-3 text-white">$14.999 POR mes</p>
+                    <a href="premium.html" class="btn btn-warning w-100 text-dark">Quiero esta membresia</a>
+                </div>
             </article>
-            </a>
+
+            <!-- Membresía Basuca -->
+            <article class="card border-white bg-danger text-white">
+                <div class="card-header bg-danger text-white text-center">
+                    <h5 class="card-title mb-0">Membresía Basica</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-light">Beneficios básicos y acceso limitado</h6>
+                    <ul class="list-unstyled mb-3">
+                        <li> 50% en entradas</li>
+                        <li> 25% off en combos</li>
+                        <li> Suma y canjea puntos</li>
+                    </ul>
+                    <p class="card-text fw-bold fs-5 mb-3">$10.999</p>
+                    <a href="premium.html" class="btn btn-danger w-100 text-white">Quiero esta membresia</a>
+                </div>
+            </article>
+        </div>
 
             <article class="dudas-membresia">
                 <h2>¿Tenes dudas sobre la membresia?</h2>
@@ -113,5 +125,10 @@
                 <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube"></a>
                 <h6>&copy; Copyright 2025 Cine Club</h6>
             </footer>
+
+        
+        <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -126,65 +126,32 @@ h2 {
 
 /*estilizacion de la seccion premium*/
 
-.membresia-principal {
-    padding: 10px;
-    border: 0;
-    margin: 0;
-}
-
 .imagen-premium {
-     display: flex;
+    display: block;
     margin: 0 auto;
     padding: 20px;
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.membresia {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
     width: 80%;
     height: auto;
     border-radius: 10px;
 }
 
-.membresia-black {
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    border: 4px solid transparent;
-    border-radius: 8px;
-    border-color: #000000;
-}
-
-.membresia-dorada {
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    border: 4px solid transparent;
-    border-radius: 8px;
-    border-color: #b38e27;
-}
-
-.membresia-basica {
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    border: 4px solid transparent;
-    border-radius: 8px;
-    border-color: #b82a0e;
-}
-
 a {
     text-decoration: none;
-    color: #e7e7e0;
+    color: #000000;
     text-align: center;
 }
 
 .dudas-membresia {
+    color: #fdfafa;
     text-align: center;
+    margin: 20px auto;
+    padding: 20px auto;
+    width: 70%;
+}
+
+.membresia {
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 /*estilizacion de la seccion candy*/
@@ -236,7 +203,7 @@ a {
     max-width: 500px;
 }
 
-/*estilizacion responsive */
+/*estilizacion responsive  del inicio y de contacto*/
 
 @media (max-width: 425px){
     header {
@@ -274,21 +241,10 @@ a {
         padding: 10px 0;
     }
 
-    .membresia,
     .formulario-ayuda,
     .formulario {
         width: 95%;
         max-width: 100%;
         padding: 10px;
-    }
-
-    .productos {
-        padding: 0 5px;
-    }
-
-    .productos article {
-        width: 95%;
-        margin: 10px auto;
-        display: block;
     }
 }

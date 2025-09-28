@@ -8,11 +8,13 @@
     <title>Contacto</title>
 </head>
 <body>
-
+  <!--encabezado de la pagina-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
+  <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#"><h1 class="h4 m-0">Cine Club</h1></a>
+      <a class="navbar-brand text-white" href="#">
+        <h1 class="h4 m-0">Cine Club</h1>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,9 +33,9 @@
           <li class="nav-item">
             <a class="nav-link text-white " href="./candy.html">Candy</a>
           </li>
-            <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link text-white" href="./registrarse.html">Registrarse</a>
-            </li>
+          </li>
         </ul>
       </div>
     </div>
@@ -41,6 +43,8 @@
         <h1>Cine club</h1>
         <h2>Bienvenido al centro de ayuda</h2>
     </header>
+
+
     
     <main>
         <section>
@@ -50,27 +54,66 @@
             </article>
         </section>
 
-        <section class="formulario-ayuda">
-            <form action="/submit" method="post">
-                <input type="text" name="mensaje" id="mensaje">
-                
-                <input type="submit" value="enviar">
-            </form>
-        </section>
+       
+            <nav class="barra-busqueda bg-body-tertiary d-flex justify-content-center">
+              <div class="container-fluid fs-5 d-flex justify-content-center">
+                <form class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center align-items-stretch" role="search">
+                  <input class="form-control form-control-m flex-grow-1" type="search" placeholder="¿en que podemos ayudarte?" aria-label="Search" style="min-width: 0;">
+                  <button class="btn btn-danger btn-lg" type="submit">Buscar</button>
+                </form>
+              </div>
+            </nav>
 
-        <section>
-            <article class="preguntas-frecuentes">
-                <h2>Preguntas frecuentes</h2>
 
-                <p>¿Que metodos de pago aceptan?</p>
-
-                <p>¿Como registrarme en la pagina?</p>
-
-                <p>¿Como tener descuentos en las entradas?</p>
-            </article>
-        </section>
+  <div class="my-4"></div>
+  <!--diseno de la barra de busqueda y acordion de las preguntas frecientes-->
+  <section class="preguntas-frecuentes d-flex flex-column align-items-center">
+    <h2>Preguntas frecuentes</h2>
+    <div class="accordion w-75" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Membresia y suscripciones
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem perspiciatis, omnis officiis reiciendis expedita iusto quis nihil nobis laborum impedit modi, 
+              cupiditate, sed saepe veniam blanditiis debitis veritatis voluptate adipisci!</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Metodos de pago
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat doloremque dolorem iusto vitae, voluptas rem temporibus 
+              molestiae nobis pariatur harum omnis ipsa quidem! Odio aperiam dolores mollitia suscipit pariatur?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Como tener descuentos
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque sit deserunt rerum quaerat,
+             hic voluptatum iusto pariatur aperiam veniam alias officiis suscipit mollitia accusamus iste esse error tenetur omnis nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     </main>
 
+    <!--Diseno del pie de pagina-->
+    
     <footer class="PieDePagina">
         <p>Seguinos en nuestras redes</p>
         <!-- Iconos de redes sociales-->
