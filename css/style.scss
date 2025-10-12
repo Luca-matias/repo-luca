@@ -1,0 +1,230 @@
+
+// VARIABLES
+
+$color-bg: #363434;
+$color-text-light: #fdfafa;
+$color-text-white: #ffffff;
+
+$font-size-h1: 40px;
+$font-size-link: 20px;
+
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+
+// MIXINS
+
+@mixin reset-box {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin text-center($color: $color-text-light) {
+  text-align: center;
+  color: $color;
+}
+
+// ESTILOS GENERALES
+
+* {
+  @include reset-box;
+  background-color: $color-bg;
+}
+
+html,
+body {
+  width: 100%;
+  @include reset-box;
+  overflow-x: hidden;
+}
+
+// TÍTULOS
+
+h1 {
+  color: $color-text-light;
+  text-align: center;
+  font-style: inherit;
+  font-size: $font-size-h1;
+}
+
+// CONTENIDO PRINCIPAL
+
+header {
+  a {
+    text-decoration: none;
+    color: $color-text-white;
+    font-size: $font-size-link;
+    font-weight: bold;
+  }
+}
+
+.imagen-principal {
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+  height: auto;
+  border-radius: $border-radius-medium;
+}
+
+.seccion-principal {
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  h2,
+  p {
+    @include text-center;
+  }
+
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius-small;
+    justify-content: center;
+  }
+}
+
+// CARTELERA
+
+.cartelera {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+// PIE DE PÁGINA
+
+.PieDePagina {
+  @include reset-box;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    margin: 10px;
+  }
+
+  p,
+  h6 {
+    @include text-center;
+  }
+
+  a {
+    align-items: center;
+  }
+}
+
+// PÁGINA DE CONTACTO
+
+h2 {
+  @include text-center;
+}
+
+.imagen-contacto {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: $border-radius-medium;
+}
+
+.barra-busqueda {
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.preguntas-frecuentes {
+  @include text-center;
+
+  p {
+    @include text-center;
+  }
+}
+
+//seccion premium
+
+.imagen-premium {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  border-radius: $border-radius-medium;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.dudas-membresia {
+  @include text-center;
+  margin: 20px auto;
+  padding: 20px auto;
+  width: 70%;
+}
+
+.membresia {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+//seccion candy 
+
+.imagen-candy {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  border-radius: $border-radius-medium;
+}
+
+.productos {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+
+  h2 {
+    color: $color-text-light;
+  }
+
+  article {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    border-radius: $border-radius-medium;
+    background-color: #5c5a5a;
+  }
+
+  img {
+    width: 100%;
+    display: flex;
+    border-radius: $border-radius-medium;
+  }
+}
+
+//formulario
+.formulario {
+  display: inline;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+
+  form {
+    padding: 20px;
+    border-radius: $border-radius-medium;
+    color: $color-text-light;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

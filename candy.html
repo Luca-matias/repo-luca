@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Candy</title>
 </head>
 <body>
+    <!--encabezado de pagina-->
     <header>
-        <h1>Cine Club</h1>
-        <nav class="secciones">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./premium.html">Premium</a></li>
-                <li><a href="./candy.html">Candy</a></li>
-                <li><a href="./registrarse.html">Registrarse</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <h1 class="h4 m-0">Cine Club</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="premium.html">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="candy.html">Candy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="registrarse.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
+    <!--contenido pincipal de candy-->
     <main>
         <section>
             <article>
@@ -28,106 +49,177 @@
             </article>
         </section>
 
+        <!--productos-->
         <section class="productos">
-            <h2>Combos</h2>
-
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000004226.png?v=00002607" alt="combo uno">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000199.png?v=00002607" alt="combo dos">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
             
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000198.png?v=00002607" alt="combo tres">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+            <h2>Combos</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000004258.png?v=00002611" class="card-img-top" alt="combo 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Combo mega los 4 fantasticos</h5>
+                            <p class="card-text text-white">$ 35.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000199.png?v=00002611" class="card-img-top" alt="combo 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Combo mega recargado</h5>
+                            <p class="card-text text-white">$ 25.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000197.png?v=00002607" alt="combo cuatro">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000004229.png?v=00002611" class="card-img-top" alt="combo 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Combo mega superman</h5>
+                            <p class="card-text text-white">$ 35.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000196.png?v=00002611" class="card-img-top" alt="combo 4">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Combo mega</h5>
+                            <p class="card-text text-white">$ 21.500</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--pochoclos-->
             <h2>pochoclos</h2>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000011.png?v=00002607" alt="balde de pochoclos">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+           <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000011.png?v=00002611" class="card-img-top" alt="balde de pochoclos">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Balde de pochoclos</h5>
+                            <p class="card-text text-white">$ 9.800</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000010.png?v=00002611" class="card-img-top" alt="pop mediano">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">POP mediano</h5>
+                            <p class="card-text text-white">$ 8.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000010.png?v=00002607" alt="pop mediano">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000004181.png?v=00002611" class="card-img-top" alt="pop chico de chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">POP envasado cookies & cream</h5>
+                            <p class="card-text text-white">$ 6.500</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000004181.png?v=00002607" alt="pop cookies">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000001744.png?v=00002611" class="card-img-top" alt="POP chico">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">POP envasado</h5>
+                            <p class="card-text text-white">$ 6.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000001744.png?v=00002607" alt="pop envasado">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
-
+            <!--bebidas-->
             <h2>Bebidas</h2>
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000028.png?v=00002607" alt="bebida grande">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000027.png?v=00002607" alt="bebida mediana">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+           <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000028.png?v=00002611" class="card-img-top" alt="bebida grande">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Bebida grande</h5>
+                            <p class="card-text text-white">$ 7.800</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000027.png?v=00002611" class="card-img-top" alt="bebida mediana">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Bebida mediana</h5>
+                            <p class="card-text text-white">$ 7.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000013.png?v=00002607" alt="agua">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000000013.png?v=00002611" class="card-img-top" alt="agua">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Agua</h5>
+                            <p class="card-text text-white">$ 4.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000001427.png?v=00002607" alt="agua saborizada">
-                <h6>Combo uno</h6>
-                <p>20.000</p>
-                <a href="#">Comprar</a>
-            </article>
-        </section>
+                <div class="col">
+                    <article class="card h-60">
+                        <img src="https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImageN/A000001427.png?v=00002611" class="card-img-top" alt="Agua saborizada">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Agua saborizada</h5>
+                            <p class="card-text text-white">$ 6.000</p>
+                            <a href="#" class="btn btn-danger">Comprar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </section>
     </main>
 
     <footer class="PieDePagina">
         <p>Seguinos en nuestras redes</p>
         <!-- Iconos de redes sociales-->
-        <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook"></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail"></a>
-        <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram"></a>
-        <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube"></a>
+        <a href="https://www.facebook.com/">
+            <img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox">
+            <img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube">
+        </a>
         <h6>&copy; Copyright 2025 Cine Club</h6>
     </footer>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>
