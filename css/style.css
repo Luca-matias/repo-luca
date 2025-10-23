@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #363434;
 }
 
+/*estilizacion de inicio*/
 html,
 body {
   width: 100%;
@@ -12,6 +12,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #363434;
 }
 
 h1 {
@@ -52,6 +53,7 @@ header a {
   border-radius: 5px;
   justify-content: center;
 }
+/*estilizacion de cartelera*/
 
 .cartelera {
   max-width: 1200px;
@@ -59,6 +61,8 @@ header a {
   padding: 0 20px;
   text-align: center;
 }
+
+/*estilizacion de pie de pagina*/
 
 .PieDePagina {
   margin: 0;
@@ -81,6 +85,7 @@ header a {
   align-items: center;
 }
 
+/*estilizacion de contacto*/
 h2 {
   text-align: center;
   color: #fdfafa;
@@ -109,6 +114,8 @@ h2 {
   color: #fdfafa;
 }
 
+/*estilizacion de membresia premium*/
+
 .imagen-premium {
   display: block;
   margin: 0 auto;
@@ -136,6 +143,8 @@ a {
   margin: 20px auto;
   padding: 0 20px;
 }
+
+/*estilizacion de candy*/
 
 .imagen-candy {
   display: block;
@@ -167,6 +176,8 @@ a {
   display: flex;
   border-radius: 10px;
 }
+
+/*estilizacion de formulario*/
 
 .formulario {
   display: inline;
