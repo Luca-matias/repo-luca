@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Crear tu cuenta</title>
+    <title>Iniciar sesion</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,43 +39,34 @@
                             <a class="nav-link text-white" href="candy.html">Candy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="registrarse.html">Registrarse</a>
+                            <a class="nav-link text-white" href="registrarse.html">Iniciar sesion</a>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main class="container py-4 d-flex justify-content-center">
-            <div class="w-70 p-4 border rounded-3 shadow bg-dark">
-                <h1 class="mb-4 text-center fs-2">Crea tu cuenta</h1>
+        <main class="container py-5 d-flex justify-content-center">
+            <div class="w-50 p-5 border rounded-3 shadow bg-dark">
+                <h1 class="mb-4 text-center fs-2">Inicia sesion</h1>
                 <form action="#" method="post" class="needs-validation" novalidate>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" id="firstName" name="firstName" placeholder="Nombre" required>
-                        <div class="invalid-feedback">Ingresa tu nombre.</div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" id="lastName" name="lastName" placeholder="Apellido" required>
-                        <div class="invalid-feedback">Ingresa tu apellido.</div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control form-control-sm" id="inputEmail" name="email" placeholder="Email" required>
+                    <div class="mb-4">
+                        <label for="inputEmail" class="form-label text-white">Correo electronico</label>
+                        <input type="email" class="form-control form-control-sm" id="inputEmail" name="email" required placeholder="usuario@gmail.com">
                         <div class="invalid-feedback">Email inválido.</div>
                     </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control form-control-sm" id="inputPassword" name="password" placeholder="Contraseña" minlength="6" required>
-                        <div class="invalid-feedback">Mínimo 6 caracteres.</div>
+                    <div class="mb-4">
+                        <label for="inputPassword" class="form-label text-white">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="inputPassword" name="password" minlength="6" required placeholder="ingrese su contraseña">
+                        <div class="invalid-feedback">Contraseña incorrecta.</div>
                     </div>
                     <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                <label class="form-check-label text-white" for="termsCheck">
-                    Acepto los <a class="text-white" href="#">términos y condiciones</a>
-                </label>
-                <div class="invalid-feedback">Debes aceptar los términos.</div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-danger btn-sm px-4">Registrarse</button>
-                <a href="#">¿olvidaste tu contraseña?</a>
+                <button type="submit" class="btn btn-danger btn-sm px-4 mb-4">Iniciar sesion</button>
+                <a href="#" class="d-block mb-3 text-white">¿olvidaste tu contraseña?</a>
+                <a href="#" class="d-block mb-3 text-white">¿no tienes una cuenta?</a>
+                <a href="premium.html" class="btn btn-warning btn-sm w-70 text-dark mt-2">Unete a nuestra membresia</a>
             </div>
         </form>
     </main>

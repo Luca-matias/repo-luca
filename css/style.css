@@ -53,14 +53,6 @@ header a {
   border-radius: 5px;
   justify-content: center;
 }
-/*estilizacion de cartelera*/
-
-.cartelera {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-  text-align: center;
-}
 
 /*estilizacion de pie de pagina*/
 
@@ -171,7 +163,7 @@ a {
   width: 200px;
   margin: 15px;
   border-radius: 10px;
-  background-color: #5c5a5a;
+  background-color: #292727;
 }
 .productos img {
   width: 100%;
