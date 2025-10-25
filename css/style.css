@@ -89,6 +89,8 @@ header a {
 h2 {
   text-align: center;
   color: #fdfafa;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .imagen-contacto {
