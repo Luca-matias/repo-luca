@@ -176,6 +176,7 @@ a {
 .formulario {
   display: inline;
   align-items: center;
+  columns: center;
   padding: 40px;
   width: 100%;
   max-width: 500px;

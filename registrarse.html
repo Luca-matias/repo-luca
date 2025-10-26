@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="crea tu cuenta para disfrutar de todos los beneficios del cine club">
-    <meta name="keywords" content="cine, peliculas, servicios, registrarse, cuenta, beneficios">
+    <meta name="description" content="Crea tu cuenta para disfrutar de todos los beneficios del Cine Club">
+    <meta name="keywords" content="cine, películas, servicios, registrarse, cuenta, beneficios">
+
+    <title>Iniciar sesión</title>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Iniciar sesion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+          crossorigin="anonymous">
+
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 p-3 border-top-0 m-0">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">
+                <a class="navbar-brand" href="#">
                     <h1 class="h4 m-0">Cine Club</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,59 +41,60 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="premium.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="candy.html">Candy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="registrarse.html">Iniciar sesion</a>
-                        </ul>
-                    </div>
+                        <li class="nav-item"><a class="nav-link active text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="premium.html">Premium</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="candy.html">Candy</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="registrarse.html">Iniciar sesión</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main class="container py-5 d-flex justify-content-center">
-            <div class="w-50 p-5 border rounded-3 shadow bg-dark">
-                <h1 class="mb-4 text-center fs-2">Inicia sesion</h1>
+    <main class="container py-5 d-flex justify-content-center">
+        <div data-aos="fade">
+            <div class="p-5 border rounded-3 shadow bg-dark">
+                <h1 class="mb-4 text-center fs-2">Inicia sesión</h1>
+
                 <form action="#" method="post" class="needs-validation" novalidate>
                     <div class="mb-4">
-                        <label for="inputEmail" class="form-label text-white">Correo electronico</label>
+                        <label for="inputEmail" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control form-control-sm" id="inputEmail" name="email" required placeholder="usuario@gmail.com">
-                        <div class="invalid-feedback">Email inválido.</div>
+                        <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
                     </div>
                     <div class="mb-4">
-                        <label for="inputPassword" class="form-label text-white">Contraseña</label>
-                        <input type="password" class="form-control form-control-sm" id="inputPassword" name="password" minlength="6" required placeholder="ingrese su contraseña">
-                        <div class="invalid-feedback">Contraseña incorrecta.</div>
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="inputPassword" name="password" minlength="6" required placeholder="Ingresa tu contraseña">
+                        <div class="invalid-feedback">Debe tener al menos 6 caracteres.</div>
                     </div>
-                    <div class="form-check mb-4">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger btn-sm px-4 mb-3">Iniciar sesión</button>
+                        <a href="#" class="d-block mb-2 text-white">¿Olvidaste tu contraseña?</a>
+                        <a href="#" class="d-block mb-3 text-white">¿No tienes una cuenta?</a>
+                        <a href="premium.html" class="btn btn-warning btn-sm w-75 text-dark mt-2">Únete a nuestra membresía</a>
+                    </div>
+                </form>
             </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-danger btn-sm px-4 mb-4">Iniciar sesion</button>
-                <a href="#" class="d-block mb-3 text-white">¿olvidaste tu contraseña?</a>
-                <a href="#" class="d-block mb-3 text-white">¿no tienes una cuenta?</a>
-                <a href="premium.html" class="btn btn-warning btn-sm w-70 text-dark mt-2">Unete a nuestra membresia</a>
-            </div>
-        </form>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer class="PieDePagina">
         <p>Seguinos en nuestras redes</p>
-        <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook"></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail"></a>
-        <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram"></a>
-        <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube"></a>
+        <!-- Iconos de redes sociales-->
+        <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook" target="_blank"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail" target="_blank"></a>
+        <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram" target="_blank"></a>
+        <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube" target="_blank"></a>
         <h6>&copy; Copyright 2025 Cine Club</h6>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200, once: true });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
