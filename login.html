@@ -53,28 +53,32 @@
     </header>
 
     <main class="container py-5 d-flex justify-content-center">
-        <div data-aos="fade">
-            <div class="p-5 border rounded-3 shadow bg-dark">
-                <h1 class="mb-4 text-center fs-2">Inicia sesión</h1>
+        <div data-aos="fade" class="w-100">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <div class="p-5 border rounded-3 shadow bg-dark text-white">
+                        <h1 class="mb-4 text-center fs-2">Inicia sesión</h1>
 
-                <form action="#" method="post" class="needs-validation" novalidate>
-                    <div class="mb-4">
-                        <label for="inputEmail" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control form-control-sm" id="inputEmail" name="email" required placeholder="usuario@gmail.com">
-                        <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                        <form action="#" method="post" class="needs-validation" novalidate>
+                            <div class="mb-4">
+                                <label for="inputEmail" class="form-label text-white">Correo electrónico</label>
+                                <input type="email" class="form-control form-control-lg" id="inputEmail" name="email" required placeholder="usuario@gmail.com">
+                                <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="inputPassword" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control form-control-lg" id="inputPassword" name="password" minlength="6" required placeholder="Ingresa tu contraseña">
+                                <div class="invalid-feedback">Debe tener al menos 6 caracteres.</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger px-4 mb-3">Iniciar sesión</button>
+                                <a href="#" class="d-block mb-2 text-white">¿Olvidaste tu contraseña?</a>
+                                <a href="#" class="d-block mb-3 text-white">¿No tienes una cuenta?</a>
+                                <a href="premium.html" class="btn btn-warning w-75 text-dark mt-2">Únete a nuestra membresía</a>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-4">
-                        <label for="inputPassword" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control form-control-sm" id="inputPassword" name="password" minlength="6" required placeholder="Ingresa tu contraseña">
-                        <div class="invalid-feedback">Debe tener al menos 6 caracteres.</div>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-danger btn-sm px-4 mb-3">Iniciar sesión</button>
-                        <a href="#" class="d-block mb-2 text-white">¿Olvidaste tu contraseña?</a>
-                        <a href="#" class="d-block mb-3 text-white">¿No tienes una cuenta?</a>
-                        <a href="premium.html" class="btn btn-warning btn-sm w-75 text-dark mt-2">Únete a nuestra membresía</a>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>

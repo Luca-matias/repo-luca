@@ -191,3 +191,160 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
+ 
+/*estelizacion de diseno responsivo*/
+/* Estilos responsivos para pantallas pequeñas */
+
+/* Tabletas y móviles grandes */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+    padding: 8px 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+  .imagen-principal,
+  .imagen-contacto,
+  .imagen-premium,
+  .imagen-candy {
+    width: 90%;
+    max-width: 600px;
+    margin: 12px auto;
+    display: block;
+  }
+
+  .seccion-principal,
+  .dudas-membresia,
+  .membresia,
+  .preguntas-frecuentes,
+  .formulario,
+  .productos,
+  .PieDePagina {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .seccion-principal button,
+  .formulario button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+  }
+
+  .productos {
+    padding: 0;
+    text-align: center;
+  }
+
+  .productos article {
+    display: block;
+    width: calc(100% - 24px);
+    margin: 10px auto;
+  }
+
+  .productos img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario {
+    display: block;
+    padding: 20px 8px;
+    max-width: 540px;
+  }
+
+  .formulario form {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .barra-busqueda {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .PieDePagina img {
+    width: 26px;
+    margin: 6px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  html, body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  .imagen-principal,
+  .imagen-contacto,
+  .imagen-premium,
+  .imagen-candy {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 8px;
+  }
+
+  .productos article {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+  }
+
+  .seccion-principal button,
+  .formulario button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .formulario {
+    padding: 12px;
+    max-width: 420px;
+  }
+
+  .formulario form {
+    font-size: 15px;
+  }
+
+  .PieDePagina p,
+  .PieDePagina h6 {
+    font-size: 14px;
+    padding: 6px 4px;
+  }
+
+  .barra-busqueda {
+    width: 100%;
+  }
+
+  /* Evitar overflow horizontal en tamaños muy pequeños */
+  body, .productos, .formulario, .membresia, .dudas-membresia {
+    overflow-x: hidden;
+  }
+}
