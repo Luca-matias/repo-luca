@@ -22,12 +22,27 @@ h1 {
   font-size: 40px;
 }
 
+/* Estilos del encabezado y hover */
+header {
+  transition: background-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  will-change: background-color, box-shadow, transform;
+}
+
 header a {
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
+  transition: color 0.18s ease, transform 0.18s ease;
 }
+
+header a:hover {
+  color: rgb(250, 240, 240);
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+/*contenido principal*/
 
 .imagen-principal {
   display: block;
@@ -193,7 +208,6 @@ a {
 /*# sourceMappingURL=style.css.map */
  
 /*estelizacion de diseno responsivo*/
-/* Estilos responsivos para pantallas pequeñas */
 
 /* Tabletas y móviles grandes */
 @media (max-width: 768px) {
@@ -320,7 +334,7 @@ a {
 
   .seccion-principal button,
   .formulario button {
-    padding: 14px;
+    padding: 10px;
     font-size: 16px;
   }
 
@@ -343,7 +357,6 @@ a {
     width: 100%;
   }
 
-  /* Evitar overflow horizontal en tamaños muy pequeños */
   body, .productos, .formulario, .membresia, .dudas-membresia {
     overflow-x: hidden;
   }
