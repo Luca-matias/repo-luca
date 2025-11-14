@@ -1,145 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="nuestra seccion de contacto te ayuda a resolver todas tus dudas">
-  <meta name="keywords" content="cine, peliculas, servicios, contacto, ayuda, preguntas frecuentes">
+  <meta name="description" content="Nuestra sección de contacto te ayuda a resolver todas tus dudas y consultas.">
+  <meta name="keywords" content="cine, películas, servicios, contacto, ayuda, preguntas frecuentes">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Contacto</title>
 </head>
+
 <body>
-  <!--encabezado de la pagina-->
+  <!-- ENCABEZADO -->
   <header>
-  <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 border-top-0 m-0">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="index.html">
-    <h1 class="h4 m-0">Cine Club</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-      <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link text-white" href="contacto.html">Contacto</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link text-white" href="premium.html">Premium</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link text-white " href="candy.html">Candy</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link text-white" href="login.html">Inicia sesion</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 p-3 m-0 border-top-0">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+          <h1 class="h4 m-0 text-white">Cine Club</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="premium.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="candy.html">Candy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.html">Inicia sesión</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- TITULOS PRINCIPALES -->
+    <div class="text-center mt-3">
+      <h1 class="text-white">Cine Club</h1>
+      <h2 class="text-white">Bienvenido al centro de ayuda</h2>
     </div>
-  </div>
-  </nav>
-    <h1>Cine club</h1>
-    <h2>Bienvenido al centro de ayuda</h2>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div data-aos="fade-down">
-    <section>
-      <article>
-        <img src="./imgProyecto/contacto.jpg" alt="imagen de contacto" class="imagen-contacto mb-3">
-        <h2>¿En que te podemos ayudar?</h2>
-      </article>
-    </section>
 
-      <nav class="barra-busqueda bg-transparent d-flex justify-content-center">
+      <!-- Imagen + título -->
+      <section class="text-center mt-4">
+        <img src="./imgProyecto/contacto.jpg" alt="Persona recibiendo ayuda en el centro de contacto" class="imagen-contacto mb-3">
+        <h2 class="text-white">¿En qué te podemos ayudar?</h2>
+      </section>
+
+      <!-- Barra de búsqueda -->
+      <section class="barra-busqueda bg-transparent d-flex justify-content-center my-4">
         <div class="container-fluid fs-5 d-flex justify-content-center">
-          <form class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center align-items-stretch p-0" role="search">
-            <input class="form-control form-control-lg custom-search flex-grow-1" type="search"
-                   placeholder="¿En qué podemos ayudarte?" aria-label="Search" style="min-width:0;">
+          <form action="#" method="get"
+                class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center align-items-stretch p-0"
+                role="search">
+
+            <input class="form-control form-control-lg custom-search flex-grow-1"
+                   type="search"
+                   placeholder="¿En qué podemos ayudarte?"
+                   aria-label="Buscar"
+                   style="min-width: 0;">
+
             <button class="btn btn-danger btn-lg custom-btn" type="submit">Buscar</button>
           </form>
         </div>
-      </nav>
+      </section>
 
-  <!--barra de busqueda y  preguntas frecuentes-->
-  <section class="preguntas-frecuentes d-flex flex-column align-items-center">
-  <h2>Preguntas frecuentes</h2>
-  <div class="accordion w-75" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-      ¿Qué es la membresía del cine?
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        <p class="text-dark">
-          Nuestra membresía es un programa especial para nuestros clientes frecuentes. Al suscribirte, podrás acceder a descuentos en entradas,
-          combos del Candy Bar, funciones exclusivas y acumulación de puntos por cada compra.</p>
-      </div>
+      <!-- Preguntas frecuentes -->
+      <section class="preguntas-frecuentes d-flex flex-column align-items-center mb-5">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="accordion w-75" id="accordionPanelsStayOpenExample">
+
+          <!-- PREGUNTA 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                ¿Qué es la membresía del cine?
+              </button>
+            </h2>
+
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p class="text-dark">
+                  Nuestra membresía es un programa especial para clientes frecuentes. Con ella obtenés descuentos,
+                  beneficios exclusivos, puntos acumulables y promociones especiales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREGUNTA 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo">
+                ¿Qué métodos de pago aceptan en el cine?
+              </button>
+            </h2>
+
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p class="text-dark">
+                  Aceptamos efectivo, tarjetas de crédito y débito, y pagos digitales como Mercado Pago, Ualá y otras billeteras virtuales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREGUNTA 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree">
+                ¿Cómo tener descuentos?
+              </button>
+            </h2>
+
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p class="text-dark">
+                  Podés acceder a precios reducidos los miércoles, beneficios exclusivos con membresía,
+                  promociones para estudiantes y jubilados, y descuentos bancarios o de billeteras virtuales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </div>
-    </div>
-    <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-       ¿Qué métodos de pago aceptan en el cine?
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-      <p class="text-dark">Aceptamos todo tipo de métodos de pago: efectivo, tarjetas de crédito y débito,
-         y pagos digitales como Mercado Pago, Ualá y otras billeteras virtuales.</p>
-      </div>
-    </div>
-    </div>
-    <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-      ¿Como tener descuentos?
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-       <p class="text-dark">Podés disfrutar de precios reducidos los miércoles, acceder a beneficios exclusivos con nuestra membresía del cine, aprovechar tarifas especiales para estudiantes, jubilados y menores de edad,
-         y obtener promociones bancarias con tarjetas o billeteras virtuales seleccionadas</p>
-    </div>
-    </div>
-  </div>
-  </div>
-  </section>
   </main>
 
-  <!--Diseno del pie de pagina-->
-  
-  <footer class="PieDePagina">
+  <!-- FOOTER -->
+  <footer class="PieDePagina text-center py-4">
     <p>Seguinos en nuestras redes</p>
-    <!-- Iconos de redes sociales-->
-    <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook" target="_blank"></a>
-    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail" target="_blank"></a>
-    <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram" target="_blank"></a>
-    <a href="https://www.youtube.com/"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube" target="_blank"></a>
+
+    <div class="d-flex justify-content-center gap-3 mb-3">
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook" width="40">
+      </a>
+
+      <a href="https://mail.google.com/mail/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail" width="40">
+      </a>
+
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram" width="40">
+      </a>
+
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube" width="40">
+      </a>
+
+    </div>
+
     <h6>&copy; Copyright 2025 Cine Club</h6>
   </footer>
 
-
-
-
-
-
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200,
-        once: true,
-      });
-    </script>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

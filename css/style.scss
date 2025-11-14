@@ -1,9 +1,9 @@
-
 // VARIABLES
-
 $color-bg: #363434;
 $color-text-light: #fdfafa;
 $color-text-white: #ffffff;
+$color-dark: #5c5a5a;
+$color-black: #000000;
 
 $font-size-h1: 40px;
 $font-size-link: 20px;
@@ -12,7 +12,6 @@ $border-radius-small: 5px;
 $border-radius-medium: 10px;
 
 // MIXINS
-
 @mixin reset-box {
   margin: 0;
   padding: 0;
@@ -24,11 +23,16 @@ $border-radius-medium: 10px;
   color: $color;
 }
 
-// ESTILOS GENERALES
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
 
+// ESTILOS GENERALES
 * {
   @include reset-box;
-  background-color: $color-bg;
 }
 
 html,
@@ -36,10 +40,10 @@ body {
   width: 100%;
   @include reset-box;
   overflow-x: hidden;
+  background-color: $color-bg;
 }
 
 // TÍTULOS
-
 h1 {
   color: $color-text-light;
   text-align: center;
@@ -48,7 +52,6 @@ h1 {
 }
 
 // CONTENIDO PRINCIPAL
-
 header {
   a {
     text-decoration: none;
@@ -70,7 +73,6 @@ header {
   a {
     color: $color-text-light;
     text-decoration: none;
-    align-items: center;
   }
 
   h2,
@@ -82,12 +84,11 @@ header {
     border: none;
     padding: 10px 20px;
     border-radius: $border-radius-small;
-    justify-content: center;
+    @include flex-center(column);
   }
 }
 
 // CARTELERA
-
 .cartelera {
   max-width: 1200px;
   margin: 20px auto;
@@ -96,7 +97,6 @@ header {
 }
 
 // PIE DE PÁGINA
-
 .PieDePagina {
   @include reset-box;
   text-align: center;
@@ -114,12 +114,11 @@ header {
   }
 
   a {
-    align-items: center;
+    display: inline-block;
   }
 }
 
 // PÁGINA DE CONTACTO
-
 h2 {
   @include text-center;
 }
@@ -133,7 +132,7 @@ h2 {
 }
 
 .barra-busqueda {
-  align-items: center;
+  @include flex-center;
   margin: 0 auto;
   width: 70%;
 }
@@ -146,8 +145,7 @@ h2 {
   }
 }
 
-//seccion premium
-
+// SECCIÓN PREMIUM
 .imagen-premium {
   display: block;
   margin: 0 auto;
@@ -159,14 +157,15 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $color-black;
+  display: inline-block;
   text-align: center;
 }
 
 .dudas-membresia {
   @include text-center;
   margin: 20px auto;
-  padding: 20px auto;
+  padding: 20px;
   width: 70%;
 }
 
@@ -175,8 +174,7 @@ a {
   padding: 0 20px;
 }
 
-//seccion candy 
-
+// SECCIÓN CANDY
 .imagen-candy {
   display: block;
   margin: 0 auto;
@@ -201,20 +199,19 @@ a {
     width: 200px;
     margin: 15px;
     border-radius: $border-radius-medium;
-    background-color: #5c5a5a;
+    background-color: $color-dark;
   }
 
   img {
     width: 100%;
-    display: flex;
+    display: block;
     border-radius: $border-radius-medium;
   }
 }
 
-//formulario
+// FORMULARIO
 .formulario {
-  display: inline;
-  align-items: center;
+  @include flex-center(column);
   padding: 40px;
   width: 100%;
   max-width: 500px;

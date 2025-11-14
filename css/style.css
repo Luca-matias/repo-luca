@@ -1,16 +1,14 @@
+/* Reinicio y configuración global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*estilizacion de inicio*/
+/* Estilización de inicio */
 html,
 body {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   overflow-x: hidden;
   background-color: #363434;
 }
@@ -42,12 +40,15 @@ header a:hover {
   text-decoration: underline;
 }
 
-/*contenido principal*/
-
-.imagen-principal {
+/* Contenido principal */
+.imagen-principal,
+.imagen-contacto,
+.imagen-premium,
+.imagen-candy {
   display: block;
   margin: 0 auto;
   width: 65%;
+  max-width: 800px;
   height: auto;
   border-radius: 10px;
 }
@@ -55,44 +56,44 @@ header a:hover {
 .seccion-principal a {
   color: #fdfafa;
   text-decoration: none;
-  align-items: center;
 }
+
 .seccion-principal h2,
 .seccion-principal p {
   text-align: center;
   color: #fdfafa;
 }
+
 .seccion-principal button {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  justify-content: center;
+  cursor: pointer;
 }
 
-/*estilizacion de pie de pagina*/
-
+/* Pie de página */
 .PieDePagina {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   text-align: center;
 }
+
 .PieDePagina img {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
   margin: 10px;
 }
+
 .PieDePagina p,
 .PieDePagina h6 {
-  text-align: center;
   color: #fdfafa;
 }
+
 .PieDePagina a {
-  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
-/*estilizacion de contacto*/
+/* Contacto */
 h2 {
   text-align: center;
   color: #fdfafa;
@@ -100,16 +101,8 @@ h2 {
   padding: 10px;
 }
 
-.imagen-contacto {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .barra-busqueda {
-  align-items: center;
+  display: block;
   margin: 0 auto;
   width: 70%;
 }
@@ -118,33 +111,13 @@ h2 {
   text-align: center;
   color: #fdfafa;
 }
-.preguntas-frecuentes p {
-  text-align: center;
-  color: #fdfafa;
-}
 
-/*estilizacion de membresia premium*/
-
-.imagen-premium {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-}
-
+/* Membresía premium */
 .dudas-membresia {
   text-align: center;
   color: #fdfafa;
   margin: 20px auto;
-  padding: 20px auto;
+  padding: 20px;
   width: 70%;
 }
 
@@ -153,26 +126,18 @@ a {
   padding: 0 20px;
 }
 
-/*estilizacion de candy*/
-
-.imagen-candy {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-}
-
+/* Candy */
 .productos {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
   text-align: center;
 }
+
 .productos h2 {
   color: #fdfafa;
 }
+
 .productos article {
   display: inline-block;
   width: 200px;
@@ -180,22 +145,23 @@ a {
   border-radius: 10px;
   background-color: #292727;
 }
+
 .productos img {
   width: 100%;
-  display: flex;
+  display: block;
   border-radius: 10px;
 }
 
-/*estilizacion de formulario*/
-
+/* Formulario */
 .formulario {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  columns: center;
   padding: 40px;
   width: 100%;
   max-width: 500px;
 }
+
 .formulario form {
   padding: 20px;
   border-radius: 10px;
@@ -205,10 +171,7 @@ a {
   text-align: left;
 }
 
-/*# sourceMappingURL=style.css.map */
- 
-/*estelizacion de diseno responsivo*/
-
+/* Diseño responsivo */
 /* Tabletas y móviles grandes */
 @media (max-width: 768px) {
   html, body {
@@ -235,7 +198,6 @@ a {
     width: 90%;
     max-width: 600px;
     margin: 12px auto;
-    display: block;
   }
 
   .seccion-principal,
@@ -256,13 +218,7 @@ a {
   .formulario button {
     display: block;
     width: 100%;
-    box-sizing: border-box;
     padding: 12px 16px;
-  }
-
-  .productos {
-    padding: 0;
-    text-align: center;
   }
 
   .productos article {
@@ -271,14 +227,7 @@ a {
     margin: 10px auto;
   }
 
-  .productos img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   .formulario {
-    display: block;
     padding: 20px 8px;
     max-width: 540px;
   }
