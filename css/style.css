@@ -1,194 +1,242 @@
-/* Reinicio y configuración global */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilización de inicio */
-html,
-body {
+/* BASE */
+html, body {
   width: 100%;
   overflow-x: hidden;
-  background-color: #363434;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  font-family: 'Arial', sans-serif;
+  color: #fdfafa;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+  text-align: center;
+  font-weight: bold;
 }
 
 h1 {
-  color: #fdfafa;
-  text-align: center;
-  font-style: inherit;
   font-size: 40px;
 }
 
-/* Estilos del encabezado y hover */
+h2 {
+  margin: 20px 0;
+}
+
+/* NAVBAR */
 header {
-  transition: background-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
-  will-change: background-color, box-shadow, transform;
+  background-color: #000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 header a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  transition: color 0.18s ease, transform 0.18s ease;
+  transition: 0.3s;
 }
 
 header a:hover {
-  color: rgb(250, 240, 240);
+  color: #00ff88;
   transform: translateY(-2px);
-  text-decoration: underline;
 }
 
-/* Contenido principal */
+/* HERO (TODAS LAS PÁGINAS) */
+.hero {
+  background: linear-gradient(135deg, black, #222);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+/* SECCIONES GENERALES */
+section {
+  padding: 60px 20px;
+}
+
+/* TARJETAS GENERALES (REUTILIZABLE) */
+.card, .beneficio, .producto-card {
+  background: #111;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover,
+.beneficio:hover,
+.producto-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* BOTONES */
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* IMÁGENES */
 .imagen-principal,
 .imagen-contacto,
 .imagen-premium,
 .imagen-candy {
   display: block;
-  margin: 0 auto;
-  width: 65%;
+  margin: 20px auto;
+  width: 70%;
   max-width: 800px;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-.seccion-principal a {
-  color: #fdfafa;
-  text-decoration: none;
-}
-
-.seccion-principal h2,
-.seccion-principal p {
+/* SECCION PRINCIPAL */
+.seccion-principal {
   text-align: center;
-  color: #fdfafa;
 }
 
-.seccion-principal button {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+.seccion-principal p {
+  opacity: 0.8;
+}
+
+/* BENEFICIOS (REUTILIZABLE) */
+.beneficio {
+  padding: 25px;
+}
+
+/* PREMIUM */
+.membresia-card {
+  border-radius: 15px;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-/* Pie de página */
-.PieDePagina {
-  text-align: center;
+.membresia-card:hover {
+  transform: scale(1.05);
 }
 
-.PieDePagina img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 30px;
-  margin: 10px;
+.membresia-card.selected {
+  border: 3px solid #00ff88;
 }
 
-.PieDePagina p,
-.PieDePagina h6 {
-  color: #fdfafa;
-}
-
-.PieDePagina a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Contacto */
-h2 {
-  text-align: center;
-  color: #fdfafa;
-  margin: 10px auto;
-  padding: 10px;
-}
-
-.barra-busqueda {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-}
-
-.preguntas-frecuentes {
-  text-align: center;
-  color: #fdfafa;
-}
-
-/* Membresía premium */
-.dudas-membresia {
-  text-align: center;
-  color: #fdfafa;
-  margin: 20px auto;
-  padding: 20px;
-  width: 70%;
-}
-
-.membresia {
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-/* Candy */
+/* CANDY */
 .productos {
   max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
+  margin: auto;
   text-align: center;
-}
-
-.productos h2 {
-  color: #fdfafa;
 }
 
 .productos article {
   display: inline-block;
-  width: 200px;
+  width: 220px;
   margin: 15px;
-  border-radius: 10px;
-  background-color: #292727;
+  padding: 10px;
+  border-radius: 15px;
+  background: #111;
+  transition: 0.3s;
+}
+
+.productos article:hover {
+  transform: scale(1.05);
 }
 
 .productos img {
   width: 100%;
-  display: block;
   border-radius: 10px;
 }
 
-/* Formulario */
+/* FORMULARIO */
 .formulario {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 40px;
+}
+
+.formulario form {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   width: 100%;
   max-width: 500px;
 }
 
-.formulario form {
-  padding: 20px;
-  border-radius: 10px;
-  color: #fdfafa;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
 }
 
-/* Diseño responsivo */
-/* Tabletas y móviles grandes */
+/* FOOTER */
+.PieDePagina {
+  text-align: center;
+  background: #000;
+  padding: 20px;
+}
+
+.PieDePagina img {
+  width: 30px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.PieDePagina img:hover {
+  transform: scale(1.2);
+}
+
+/* BÚSQUEDA */
+.barra-busqueda {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* FAQ */
+.preguntas-frecuentes {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  html, body {
-    font-size: 16px;
-  }
 
   h1 {
-    font-size: 32px;
-    padding: 8px 10px;
+    font-size: 28px;
   }
 
-  h2 {
-    font-size: 24px;
+  .hero {
+    padding: 50px 15px;
   }
 
-  header a {
-    font-size: 18px;
+  .productos article {
+    width: 90%;
+  }
+
+  .barra-busqueda {
+    width: 90%;
   }
 
   .imagen-principal,
@@ -196,66 +244,13 @@ h2 {
   .imagen-premium,
   .imagen-candy {
     width: 90%;
-    max-width: 600px;
-    margin: 12px auto;
-  }
-
-  .seccion-principal,
-  .dudas-membresia,
-  .membresia,
-  .preguntas-frecuentes,
-  .formulario,
-  .productos,
-  .PieDePagina {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .seccion-principal button,
-  .formulario button {
-    display: block;
-    width: 100%;
-    padding: 12px 16px;
-  }
-
-  .productos article {
-    display: block;
-    width: calc(100% - 24px);
-    margin: 10px auto;
-  }
-
-  .formulario {
-    padding: 20px 8px;
-    max-width: 540px;
-  }
-
-  .formulario form {
-    padding: 12px;
-    font-size: 16px;
-  }
-
-  .barra-busqueda {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  .PieDePagina img {
-    width: 26px;
-    margin: 6px;
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
-  html, body {
-    font-size: 15px;
-  }
 
   h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   h2 {
@@ -264,49 +259,5 @@ h2 {
 
   header a {
     font-size: 16px;
-  }
-
-  .imagen-principal,
-  .imagen-contacto,
-  .imagen-premium,
-  .imagen-candy {
-    width: 100%;
-    margin: 8px 0;
-    border-radius: 8px;
-  }
-
-  .productos article {
-    width: 100%;
-    margin: 8px 0;
-    padding: 8px;
-  }
-
-  .seccion-principal button,
-  .formulario button {
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .formulario {
-    padding: 12px;
-    max-width: 420px;
-  }
-
-  .formulario form {
-    font-size: 15px;
-  }
-
-  .PieDePagina p,
-  .PieDePagina h6 {
-    font-size: 14px;
-    padding: 6px 4px;
-  }
-
-  .barra-busqueda {
-    width: 100%;
-  }
-
-  body, .productos, .formulario, .membresia, .dudas-membresia {
-    overflow-x: hidden;
   }
 }

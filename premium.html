@@ -1,228 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Nuestra membresía premium te ofrece los mejores beneficios para disfrutar del cine.">
-    <meta name="keywords"
-        content="cine, películas, servicios, membresías, premium, beneficios">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium - Cine Club</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-    <title>Premium</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
-    <!-- ENCABEZADO -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-dark w-100 p-3 m-0 border-top-0">
-            <div class="container-fluid">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+    <a class="navbar-brand fw-bold" href="#">🎬 Cine Club</a>
 
-                <a class="navbar-brand text-white" href="index.html">
-                    <h1 class="h4 m-0">Cine Club</h1>
-                </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Premium</a></li>
+            <li class="nav-item"><a class="nav-link" href="candy.html">Candy</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+    </div>
+</nav>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+<!-- HERO -->
+<section class="hero text-center">
+    <h1>Viví el cine como nunca 🍿</h1>
+    <p>Elegí tu membresía y desbloqueá beneficios exclusivos</p>
+</section>
 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" href="index.html"
-                                aria-current="page">Inicio</a>
-                        </li>
+<!-- BENEFICIOS -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
-                        </li>
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="beneficio">
+                <h4>🎟️ Descuentos</h4>
+                <p>Entradas más baratas todos los meses.</p>
+            </div>
+        </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="premium.html">Premium</a>
-                        </li>
+        <div class="col-md-4">
+            <div class="beneficio">
+                <h4>🍔 Combos</h4>
+                <p>Promociones exclusivas en candy bar.</p>
+            </div>
+        </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="candy.html">Candy</a>
-                        </li>
+        <div class="col-md-4">
+            <div class="beneficio">
+                <h4>⭐ Experiencia VIP</h4>
+                <p>Acceso prioritario y beneficios únicos.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="login.html">Iniciá sesión</a>
-                        </li>
+<!-- PLANES -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Elegí tu plan</h2>
+
+    <div class="row g-4">
+
+        <!-- BLACK -->
+        <div class="col-md-4">
+            <div class="card membresia-card bg-dark text-white">
+                <div class="card-body text-center">
+                    <h3>Black 🖤</h3>
+                    <p class="text-warning">Premium total</p>
+
+                    <ul class="text-start">
+                        <li>2 entradas/mes</li>
+                        <li>50% OFF entradas</li>
+                        <li>25% OFF combos</li>
+                        <li>Refill gratis</li>
                     </ul>
 
+                    <h2>$17.999</h2>
+                    <button class="btn btn-outline-light seleccionar">Elegir</button>
                 </div>
-
             </div>
-        </nav>
-    </header>
+        </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <div data-aos="fade-down">
+        <!-- DORADA -->
+        <div class="col-md-4">
+            <div class="card membresia-card bg-warning text-dark">
+                <div class="card-body text-center">
+                    <h3>Dorada ⭐</h3>
+                    <p>Balance ideal</p>
 
-            <!-- Imagen y título -->
-            <section class="text-center my-4">
-                <img src="./imgProyecto/premium.jpg" alt="Imagen de membresía premium"
-                    class="imagen-premium mb-3">
+                    <ul class="text-start">
+                        <li>2 entradas/mes</li>
+                        <li>50% OFF entradas</li>
+                        <li>25% OFF combos</li>
+                    </ul>
 
-                <h2 class="text-white">Elegí qué tipo de membresía querés ser</h2>
-                <p class="text-center text-white">
-                    Unite a nuestra membresía premium ¡y disfrutá de sus beneficios!
-                </p>
-            </section>
-
-            <!-- TIPOS DE MEMBRESÍA -->
-            <section class="membresia">
-
-                <div class="card-group">
-
-                    <!-- Membresía Black -->
-                    <article class="card border-white bg-dark text-white">
-                        <div class="card-header bg-dark text-white text-center">
-                            <h5 class="card-title mb-0">Membresía Black</h5>
-                        </div>
-
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-light">
-                                Acceso total y beneficios exclusivos
-                            </h6>
-
-                            <ul class="list-unstyled mb-3">
-                                <li>2 entradas mensuales</li>
-                                <li>50% off en entradas</li>
-                                <li>25% off en combos</li>
-                                <li>Regalo de bienvenida</li>
-                                <li>Refill de una gaseosa</li>
-                            </ul>
-
-                            <p class="card-text fw-bold fs-5 mb-3">$17.999 POR MES</p>
-
-                            <a href="comprar.html" class="btn btn-outline-light w-100">
-                                Quiero esta membresía
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Membresía Dorada -->
-                    <article class="card border-white bg-light">
-                        <div class="card-header text-center text-dark">
-                            <h5 class="card-title mb-0">Membresía Dorada</h5>
-                        </div>
-
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-dark">
-                                Beneficios premium y descuentos especiales
-                            </h6>
-
-                            <ul class="list-unstyled mb-3 text-dark">
-                                <li>2 entradas mensuales</li>
-                                <li>25% off en combos</li>
-                                <li>50% off en entradas</li>
-                                <li>Regalo de bienvenida</li>
-                            </ul>
-
-                            <p class="card-text fw-bold fs-5 mb-3 text-dark">$14.999 POR MES</p>
-
-                            <a href="comprar.html" class="btn btn-warning w-100 text-dark">
-                                Quiero esta membresía
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Membresía Básica -->
-                    <article class="card border-white bg-danger text-white">
-                        <div class="card-header bg-danger text-white text-center">
-                            <h5 class="card-title mb-0">Membresía Básica</h5>
-                        </div>
-
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-light">
-                                Beneficios básicos y acceso limitado
-                            </h6>
-
-                            <ul class="list-unstyled mb-3">
-                                <li>50% off en entradas</li>
-                                <li>25% off en combos</li>
-                                <li>Suma y canjea puntos</li>
-                            </ul>
-
-                            <p class="card-text fw-bold fs-5 mb-3">$10.999 POR MES</p>
-
-                            <a href="comprar.html" class="btn btn-dark w-100 text-white">
-                                Quiero esta membresía
-                            </a>
-                        </div>
-                    </article>
-
+                    <h2>$14.999</h2>
+                    <button class="btn btn-dark seleccionar">Elegir</button>
                 </div>
-
-                <!-- Dudas sobre la membresía -->
-                <article class="dudas-membresia text-center mt-4">
-                    <h2 class="text-white">¿Tenés dudas sobre la membresía?</h2>
-
-                    <p class="text-white">
-                        Hacé <a href="contacto.html" class="text-warning">click acá</a> y consultá
-                        nuestra sección de preguntas frecuentes.
-                    </p>
-                </article>
-
-            </section>
-
-        </div>
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer class="PieDePagina text-center py-4">
-        <p>Seguinos en nuestras redes</p>
-
-        <div class="d-flex justify-content-center gap-3 mb-3">
-
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png"
-                    alt="Facebook" width="40">
-            </a>
-
-            <a href="https://mail.google.com/mail/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png"
-                    alt="Mail" width="40">
-            </a>
-
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png"
-                    alt="Instagram" width="40">
-            </a>
-
-            <a href="https://www.youtube.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png"
-                    alt="YouTube" width="40">
-            </a>
-
+            </div>
         </div>
 
-        <h6>&copy; Copyright 2025 Cine Club</h6>
-    </footer>
+        <!-- BASICA -->
+        <div class="col-md-4">
+            <div class="card membresia-card bg-danger text-white">
+                <div class="card-body text-center">
+                    <h3>Básica 🔥</h3>
+                    <p>Para empezar</p>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-            once: true,
-        });
-    </script>
+                    <ul class="text-start">
+                        <li>50% OFF entradas</li>
+                        <li>25% OFF combos</li>
+                        <li>Puntos</li>
+                    </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    <h2>$10.999</h2>
+                    <button class="btn btn-outline-light seleccionar">Elegir</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <button id="continuar" class="btn btn-success btn-lg" disabled>
+            Continuar compra 💳
+        </button>
+        <p id="mensaje" class="mt-3"></p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+
+    <div class="accordion" id="faq">
+
+        <div class="accordion-item">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+                ¿Se puede cancelar?
+            </button>
+            <div id="a1" class="accordion-collapse collapse show">
+                <div class="accordion-body">Sí, cuando quieras.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a2">
+                ¿Es mensual?
+            </button>
+            <div id="a2" class="accordion-collapse collapse">
+                <div class="accordion-body">Sí, el pago es mensual.</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 bg-black">
+    <p>Seguinos</p>
+    <p>© 2025 Cine Club</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="premium.js"></script>
 
 </body>
-
 </html>

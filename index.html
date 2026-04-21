@@ -19,7 +19,6 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 p-3 m-0 border-0">
             <div class="container-fluid">
-
                 <a class="navbar-brand text-white icon-link-hover" href="index.html">
                     <h1 class="h4 m-0">Cine Club</h1>
                 </a>
@@ -46,9 +45,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="login.html">Inicia sesión</a>
                         </li>
+                        <!-- CARRITO -->
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                            🛒 <span id="contador-carrito">0</span>
+                          </a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -72,129 +76,11 @@
             <section class="mb-5">
                 <h2 class="mb-4 text-center">Películas en cartelera</h2>
 
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- BUSCADOR -->
+                <input type="text" id="buscador" placeholder="Buscar película..." class="form-control mb-4">
 
-                    <!-- Película -->
-                    <div class="col">
-                        <div class="card h-100 bg-dark text-white">
-                            <img src="./imgProyecto/conjuro4.jpg" class="card-img-top" alt="El conjuro 4">
-
-                            <div class="card-body">
-                                <h5 class="card-title">El conjuro 4</h5>
-                                <p class="card-text">2D · 4D E-MOTION · COMFORT · XD DIGITAL · D-BOX · PREMIUM CLASS</p>
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 text-center">
-                                <a href="index.html" class="btn btn-outline-danger btn-sm">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... otras 3 tarjetas sin cambios excepto limpieza -->
-
-                    <div class="col">
-                        <div class="card h-100 bg-dark text-white">
-                            <img src="./imgProyecto/demonSlayer.jpg" class="card-img-top" alt="Demon Slayer">
-                            <div class="card-body">
-                                <h5 class="card-title">Demon Slayer</h5>
-                                <p class="card-text">2D · 4D E-MOTION</p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 text-center">
-                                <a href="index.html" class="btn btn-outline-danger btn-sm">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 bg-dark text-white">
-                            <img src="./imgProyecto/homoArgentum.jpg" class="card-img-top" alt="Homo Argentum">
-                            <div class="card-body">
-                                <h5 class="card-title">Homo Argentum</h5>
-                                <p class="card-text">2D · 4D E-MOTION · COMFORT · XD</p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 text-center">
-                                <a href="index.html" class="btn btn-outline-danger btn-sm">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 bg-dark text-white">
-                            <img src="./imgProyecto/princesaMononoke.jpg" class="card-img-top" alt="La princesa Mononoke">
-                            <div class="card-body">
-                                <h5 class="card-title">La princesa Mononoke</h5>
-                                <p class="card-text">2D</p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 text-center">
-                                <a href="index.html" class="btn btn-outline-danger btn-sm">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Próximos estrenos -->
-            <section>
-                <h2 class="mb-4 text-center">Próximos Estrenos</h2>
-
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-
-                    <div class="col">
-                        <div class="card h-100 bg-dark text-white">
-                            <img src="./imgProyecto/laHermanastraFea.jpg" class="card-img-top" alt="La hermanastra fea">
-                            <div class="card-body">
-                                <h5 class="card-title">La hermanastra fea</h5>
-                                <p class="card-text">2D · 4D E-MOTION · COMFORT · XD DIGITAL · D-BOX · PREMIUM CLASS</p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 text-center">
-                                <button class="btn btn-outline-secondary btn-sm" disabled>Próximamente</button>
-                            </div>
-                        </div>
-                    </div>
-
-                     <!-- Estreno 2 -->
-        <div class="col">
-            <div class="card h-100 bg-dark text-white">
-                <img src="./imgProyecto/tortugaRoja.jpg" class="card-img-top" alt="La tortuga roja">
-                <div class="card-body">
-                    <h5 class="card-title">La tortuga roja</h5>
-                    <p class="card-text">2D · 4D E-MOTION</p>
-                </div>
-                <div class="card-footer bg-transparent border-0 text-center">
-                    <button class="btn btn-outline-secondary btn-sm" disabled>Próximamente</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Estreno 3 -->
-        <div class="col">
-            <div class="card h-100 bg-dark text-white">
-                <img src="./imgProyecto/elRetorno.jpg" class="card-img-top" alt="El retorno">
-                <div class="card-body">
-                    <h5 class="card-title">El retorno</h5>
-                    <p class="card-text">2D · 4D E-MOTION · COMFORT · XD</p>
-                </div>
-                <div class="card-footer bg-transparent border-0 text-center">
-                    <button class="btn btn-outline-secondary btn-sm" disabled>Próximamente</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Estreno 4 -->
-        <div class="col">
-            <div class="card h-100 bg-dark text-white">
-                <img src="./imgProyecto/telefonoNegroDos.jpg" class="card-img-top" alt="Teléfono negro 2">
-                <div class="card-body">
-                    <h5 class="card-title">Teléfono negro 2</h5>
-                    <p class="card-text">2D</p>
-                </div>
-                <div class="card-footer bg-transparent border-0 text-center">
-                    <button class="btn btn-outline-secondary btn-sm" disabled>Próximamente</button>
-                </div>
-            </div>
-        </div>
-                </div>
+                <!-- CONTENEDOR DINÁMICO -->
+                <div id="contenedor-peliculas" class="row row-cols-1 row-cols-md-4 g-4"></div>
             </section>
         </div>
     </main>
@@ -202,37 +88,45 @@
     <!-- Footer -->
     <footer class="PieDePagina text-center py-4">
         <p>Seguinos en nuestras redes</p>
-
         <div class="d-flex justify-content-center gap-3 mb-3">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook" width="40">
             </a>
-
             <a href="https://mail.google.com/mail/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/128/3916/3916632.png" alt="Mail" width="40">
             </a>
-
             <a href="https://www.instagram.com/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt="Instagram" width="40">
             </a>
-
             <a href="https://www.youtube.com/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/128/6422/6422215.png" alt="YouTube" width="40">
             </a>
         </div>
-
         <h6>&copy; 2025 Cine Club. Todos los derechos reservados.</h6>
     </footer>
+
+    <!-- MODAL CARRITO -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title">Tu carrito</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body" id="items-carrito"></div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" id="vaciar-carrito">Vaciar carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1200,
-        once: true,
-      });
+      AOS.init({ duration: 1200, once: true });
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

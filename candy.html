@@ -7,7 +7,7 @@
     <meta name="keywords" content="cine, peliculas, servicios, candy, combos, pochoclos, bebidas">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Candy</title>
 </head>
@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active text-white" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="contacto.html">Contacto</a>
@@ -40,6 +40,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="login.html">Iniciá sesión</a>
                         </li>
+                        <!-- Contador carrito -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                                🛒 <span id="contador-carrito">0</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,159 +53,129 @@
     </header>
 
     <!-- Contenido principal de Candy -->
-    <main>
-        <div data-aos="fade-down" class="text-center">
+    <main class="text-center">
+        <div data-aos="fade-down">
             <section>
-            <article>
-            <img src="./imgProyecto/candy.jpg" alt="Combo de candy del cine" class="imagen-candy" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
-            <h2>Compra ya tu combo online</h2>
-            </article>
+                <img src="./imgProyecto/candy.jpg" alt="Combo de candy del cine" class="imagen-candy mb-3" style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+                <h2>Compra ya tu combo online</h2>
             </section>
 
             <!-- Productos -->
-            <section class="productos">
-            <!-- Combos -->
-            <h2>Combos</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/comboUno.jpg" class="card-img-top" alt="Combo mega Los 4 Fantásticos">
-                    <div class="card-body">
-                    <h5 class="card-title">Combo mega Los 4 Fantásticos</h5>
-                    <p class="card-text">$ 35.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+            <section class="productos mt-4">
+                <!-- Combos -->
+                <h2>Combos</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/comboUno.jpg" class="card-img-top" alt="Combo mega Los 4 Fantásticos">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo mega Los 4 Fantásticos</h5>
+                                <p class="card-text">$ 35.000</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="Combo mega Los 4 Fantásticos" data-precio="35000">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/comboDos.jpg" class="card-img-top" alt="Combo mega recargado">
-                    <div class="card-body">
-                    <h5 class="card-title">Combo mega recargado</h5>
-                    <p class="card-text">$ 25.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/comboDos.jpg" class="card-img-top" alt="Combo mega recargado">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo mega recargado</h5>
+                                <p class="card-text">$ 25.000</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="Combo mega recargado" data-precio="25000">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/comboTres.jpg" class="card-img-top" alt="Combo mega Superman">
-                    <div class="card-body">
-                    <h5 class="card-title">Combo mega Superman</h5>
-                    <p class="card-text">$ 35.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/comboTres.jpg" class="card-img-top" alt="Combo mega Superman">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo mega Superman</h5>
+                                <p class="card-text">$ 35.000</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="Combo mega Superman" data-precio="35000">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/comboCuatro.jpg" class="card-img-top" alt="Combo mega simple">
-                    <div class="card-body">
-                    <h5 class="card-title">Combo mega</h5>
-                    <p class="card-text">$ 21.500</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/comboCuatro.jpg" class="card-img-top" alt="Combo mega simple">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo mega simple</h5>
+                                <p class="card-text">$ 21.500</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="Combo mega simple" data-precio="21500">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
                 </div>
-            </div>
 
-            <!-- Pochoclos -->
-            <h2>Pochoclos</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/pochoclosUno.jpg" class="card-img-top" alt="Balde de pochoclos grande">
-                    <div class="card-body">
-                    <h5 class="card-title">Balde de pochoclos</h5>
-                    <p class="card-text">$ 9.800</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                <!-- Pochoclos -->
+                <h2 class="mt-4">Pochoclos</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/pochoclosUno.jpg" class="card-img-top" alt="Balde de pochoclos grande">
+                            <div class="card-body">
+                                <h5 class="card-title">Balde de pochoclos</h5>
+                                <p class="card-text">$ 9.800</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="Balde de pochoclos" data-precio="9800">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/pochoclosDos.jpg" class="card-img-top" alt="POP mediano">
-                    <div class="card-body">
-                    <h5 class="card-title">POP mediano</h5>
-                    <p class="card-text">$ 8.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/pochoclosDos.jpg" class="card-img-top" alt="POP mediano">
+                            <div class="card-body">
+                                <h5 class="card-title">POP mediano</h5>
+                                <p class="card-text">$ 8.000</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="POP mediano" data-precio="8000">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/pochoclosTres.jpg" class="card-img-top" alt="POP envasado cookies & cream">
-                    <div class="card-body">
-                    <h5 class="card-title">POP envasado Cookies & Cream</h5>
-                    <p class="card-text">$ 6.500</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/pochoclosTres.jpg" class="card-img-top" alt="POP envasado Cookies & Cream">
+                            <div class="card-body">
+                                <h5 class="card-title">POP envasado Cookies & Cream</h5>
+                                <p class="card-text">$ 6.500</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="POP envasado Cookies & Cream" data-precio="6500">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/pochoclosCuatro.jpg" class="card-img-top" alt="POP chico envasado">
-                    <div class="card-body">
-                    <h5 class="card-title">POP envasado</h5>
-                    <p class="card-text">$ 6.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
+                    <div class="col">
+                        <div class="card bg-dark text-white h-100">
+                            <img src="./imgProyecto/pochoclosCuatro.jpg" class="card-img-top" alt="POP chico envasado">
+                            <div class="card-body">
+                                <h5 class="card-title">POP envasado chico</h5>
+                                <p class="card-text">$ 6.000</p>
+                                <button class="btn btn-danger comprar-btn" data-nombre="POP envasado chico" data-precio="6000">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </article>
                 </div>
-            </div>
-
-            <!-- Bebidas -->
-            <h2>Bebidas</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/bebidaUno.jpg" class="card-img-top" alt="Bebida grande">
-                    <div class="card-body">
-                    <h5 class="card-title">Bebida grande</h5>
-                    <p class="card-text">$ 7.800</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                    </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/bebidaDos.jpg" class="card-img-top" alt="Bebida mediana">
-                    <div class="card-body">
-                    <h5 class="card-title">Bebida mediana</h5>
-                    <p class="card-text">$ 7.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                    </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/bebidaTres.jpg" class="card-img-top" alt="Agua">
-                    <div class="card-body">
-                    <h5 class="card-title">Agua</h5>
-                    <p class="card-text">$ 4.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                    </div>
-                </article>
-                </div>
-                <div class="col">
-                <article class="card bg-dark text-white" style="transform: scale(1.05);">
-                    <img src="./imgProyecto/bebidaCuatro.jpg" class="card-img-top" alt="Agua saborizada">
-                    <div class="card-body">
-                    <h5 class="card-title">Agua saborizada</h5>
-                    <p class="card-text">$ 6.000</p>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                    </div>
-                </article>
-                </div>
-            </div>
             </section>
         </div>
     </main>
 
+    <!-- MODAL CARRITO -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tu carrito</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="items-carrito-candy">
+                    <p>El carrito está vacío</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" id="vaciar-carrito-candy">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="PieDePagina text-center p-4 bg-dark text-white">
         <p>Seguinos en nuestras redes</p>
-        <!-- Iconos de redes sociales -->
         <a href="https://www.facebook.com/" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt="Facebook">
         </a>
@@ -218,13 +194,9 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1200,
-            once: true,
-        });
+        AOS.init({ duration: 1200, once: true });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/candy.js"></script>
 </body>
 </html>
